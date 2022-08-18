@@ -1,4 +1,5 @@
-    function makeid(length) {
+import fetch from 'node-fetch'  
+function makeid(length) {
         var result           = '';
         var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         var charactersLength = characters.length;
