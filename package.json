@@ -12,5 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^3.2.10"
+    "simple-ddos": "^2.0.4"
   }
 }
