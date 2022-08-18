@@ -10,4 +10,4 @@ return result;
 }
 setTimeout(()=>{
 console.log(makeid(10))
-}, 20000)
+}, 100000)
