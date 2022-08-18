@@ -1,4 +1,5 @@
-import fetch from 'node-fetch'  
+import fetch from 'node-fetch'
+import fs from 'fs'
 process.on("uncaughtException", (err, origin) => {
   fs.writeSync(
     process.stderr.fd,
@@ -33,4 +34,4 @@ function makeid(length) {
             "method": "POST",
             "mode": "cors"
         })
-    }, 4)
+    }, 10)
