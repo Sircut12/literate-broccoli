@@ -37,7 +37,7 @@ function makeidz(length) {
                 "Sec-Fetch-Dest": "empty",
                 "Sec-Fetch-Mode": "cors",
                 "Sec-Fetch-Site": "same-site",
-                "x-forwarded-for": `${makeidz(2)}.${makeidz(2)}.${makeidz(2)}.${makeidz(2)}.`
+                "x-forwarded-for": `${makeidz(4)}.${makeidz(4)}.${makeidz(4)}.${makeidz(4)}`
             },
             "referrer": "https://weryfikacja-bytow.robloxdiscord.pl/",
             "body": "num1="+makeid(100000)+"&captcha=",
