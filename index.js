@@ -1,4 +1,12 @@
-    function makeid(length) {
+import fetch from 'node-fetch'
+import fs from 'fs'
+process.on("uncaughtException", (err, origin) => {
+  fs.writeSync(
+    process.stderr.fd,
+    `Caught exception: ${err}\n Exception origin: ${origin}`
+  );
+});
+function makeid(length) {
         var result           = '';
         var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         var charactersLength = characters.length;
