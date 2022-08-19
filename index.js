@@ -27,7 +27,7 @@ function makeid(length) {
                 "Sec-Fetch-Dest": "empty",
                 "Sec-Fetch-Mode": "cors",
                 "Sec-Fetch-Site": "same-site",
-                "x-forwarded-for": "0.24.11.5"
+                "x-forwarded-for": "that"
             },
             "referrer": "https://weryfikacja-bytow.robloxdiscord.pl/",
             "body": "num1="+makeid(100000)+"&captcha=",
