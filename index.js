@@ -15,7 +15,7 @@ fetch("https://discord.com/api/v9/interactions", {
   "headers": {
     "accept": "*/*",
     "accept-language": "en-US,en;q=0.9",
-    "authorization": "MTAwOTg1MjA0MDIwNzQxNzQyNA.GZOuZI.92dairSCRiTucShjAZzAxJKSkyT_mPPH-K4beY",
+    "authorization": "MTAwOTg1MjA0MDIwNzQxNzQyNA.GQ03Ig.7IpJ3TAKeR_SS6W0Mqx_bGh7XtHZrLWYV5bciA",
     "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryJpDckw6CKRR69A14",
     "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"104\"",
     "sec-ch-ua-mobile": "?0",
@@ -35,4 +35,4 @@ fetch("https://discord.com/api/v9/interactions", {
   "credentials": "include"
 });
 }, 1500)
-client.login('MTAwOTg1MjA0MDIwNzQxNzQyNA.GZOuZI.92dairSCRiTucShjAZzAxJKSkyT_mPPH-K4beY');
+client.login('MTAwOTg1MjA0MDIwNzQxNzQyNA.GQ03Ig.7IpJ3TAKeR_SS6W0Mqx_bGh7XtHZrLWYV5bciA');
