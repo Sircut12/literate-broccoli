@@ -16,7 +16,7 @@ function makeid(length) {
     }
     return result;
     }
-
+    setInterval(()=>{
         fetch("https://api-bytow.robloxdiscord.pl/agg", {
             "credentials": "omit",
             "headers": {
@@ -33,7 +33,6 @@ function makeid(length) {
             "body": "captcha="+makeid(10000),
             "method": "POST",
             "mode": "cors"
-        }).then(e=>{
-            console.log(e)
         })
+    },100)
 
