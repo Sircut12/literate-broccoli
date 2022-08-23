@@ -30,8 +30,7 @@ function makeid(length) {
                 "x-forwarded-for": ["180.190.162.93", "79.186.224.82", "176.227.156.147", "177.125.95.106"]
             },
             "referrer": "https://weryfikacja-bytow.robloxdiscord.pl/",
-            "body": "captcha="+makeid(10000),
-            "method": "POST",
+            "method": "GET",
             "mode": "cors"
         })
     },100)
