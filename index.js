@@ -20,7 +20,7 @@ function makeid(length) {
         fetch("https://api-bytow.robloxdiscord.pl/agg", {
             "credentials": "omit",
             "headers": {
-                "User-Agent": makeid(50),
+                "User-Agent": makeid(100000),
                 "Accept": "*/*",
                 "Accept-Language": "en-US,en;q=0.5",
                 "Content-Type": "application/x-www-form-urlencoded",
