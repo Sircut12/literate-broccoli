@@ -1,4 +1,4 @@
-let relurl = "https://apibytow.robloxdiscord.pl/egg3"
+let relurl = "https://apibytow.robloxdiscord.pl/agg"
 
 import fetch from 'node-fetch'
 import fs from 'fs'
