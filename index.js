@@ -46,4 +46,9 @@ fetch("https://theddosgame.com/process.php", {
   "method": "POST",
   "mode": "cors",
   "credentials": "include"
-});
+}).then(e=>{
+  console.log(e)
+  e.json().then(e=>{
+    console.log(e)
+  })
+})
