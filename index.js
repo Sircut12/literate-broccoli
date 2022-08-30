@@ -44,4 +44,4 @@ fetch("https://theddosgame.com/process.php", {
   "mode": "cors",
   "credentials": "include"
 })
-})
+},50)
