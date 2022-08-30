@@ -42,7 +42,7 @@ fetch("https://theddosgame.com/process.php", {
   },
   "referrer": "https://theddosgame.com/process.php",
   "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "username="+ae+"&pass="+ze+"&secret=123456&register=",
+  "body": "username="+ae+"&pass="+ze+"&cpass="+ze+"&secret=123456&register=",
   "method": "POST",
   "mode": "cors",
   "credentials": "include"
