@@ -18,13 +18,10 @@ function makeid(length) {
     }
     return result;
     }
-
+setInterval(()=>{
+  
 let ae = makeid(11)
-console.log("username")
-console.log(ae)
 let ze = makeid(40)
-console.log("pass")
-console.log(ze)
 fetch("https://theddosgame.com/process.php", {
   "headers": {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
@@ -46,9 +43,5 @@ fetch("https://theddosgame.com/process.php", {
   "method": "POST",
   "mode": "cors",
   "credentials": "include"
-}).then(e=>{
-  console.log(e)
-  e.json().then(e=>{
-    console.log(e)
-  })
+})
 })
