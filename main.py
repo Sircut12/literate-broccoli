@@ -51,6 +51,111 @@ try:
     driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
 except:
     pass
+print(driver.current_url)
+driver.get("http://lyksoomu.com/CSMc")
+time.sleep(15)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+driver.get("http://lyksoomu.com/CSMc")
+time.sleep(15)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+driver.get("http://lyksoomu.com/CSMc")
+time.sleep(15)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+driver.get("http://lyksoomu.com/CSMc")
+time.sleep(15)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
+time.sleep(1)
+try:
+    driver.find_element(By.XPATH, "/html/body/div[5]/table/tbody/tr[1]/td/div/div[1]/span[2]/a/img").click()
+except:
+    pass
 time.sleep(1)
 time.sleep(10)
 driver.close()
