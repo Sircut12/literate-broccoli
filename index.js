@@ -1,3 +1,4 @@
+import fetch from 'node-fetch'
 async function r(){
     await fetch("https://theddosgame.com/captcha.php", {
         "credentials": "include",
