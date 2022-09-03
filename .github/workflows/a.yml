@@ -1,4 +1,4 @@
-name: x
+name: vx
 
 on:
   workflow_dispatch:
